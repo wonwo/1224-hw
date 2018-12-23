@@ -1,0 +1,144 @@
+*{
+  font-family:微軟正黑體;
+/*   border:solid 1px black; */
+}
+body{
+  padding:50px;
+  display:flex;
+  justify-content:center;
+  background-color:#7045af;
+  color:rgba(255,255,255,0.9);
+  font-size:15px;
+  line-height:22px;
+  letter-spacing:1px;
+}
+.resume{
+  display:flex;
+  max-width:950px;
+  border:solid 6px white;
+  position:relative;
+}
+.left, .right{
+  padding:15px;
+}
+.left{
+  flex:5;
+}
+.right{
+  flex:5;
+  padding-top:150px ;
+}
+ul{
+  padding:0px;
+  list-style:none;
+}
+a{
+  color:rgba(255,255,255,0.9);
+}
+h2{
+  margin:0px;
+  margin-top:25px;
+}
+h2::after{
+  content:"";
+  display:inline-block;
+  width:20px;
+  height:8px;
+  background-color: #1F1F;
+  margin-left:10px;
+}
+h4{
+  margin:0px;
+  margin-top:40px;
+}
+p{
+  text-align:justify;
+}
+.year li{
+  margin-left:20px;
+  padding-left:15px;
+  border-left:solid 2px white;
+}
+hr{
+  background-color: #7400A1;
+  border:0px;
+  height:5px;
+  width:50%;
+  display:relative;
+  margin-left: 0px;
+}
+.decoration{
+  width:300px;
+  height:140px;
+  background:linear-gradient(135deg,#7400A1,#FFF);
+  border-radius: 70px 0px 0px 70px;
+  position:absolute;
+  right:0px;
+  top:50px;
+}
+.circle{
+  width:50px;
+  height:50px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius:50%;
+  position:relative;
+  overflow:hidden;
+}
+.circle::after{
+  content:"";
+  display:block;
+  background-color: rgba(44,27,6,0.7);
+  width:calc(100% - 20px);
+  height:calc(100% - 20px);
+  border-radius:50%;
+  position:relative;
+  left:50%;
+  top:50%;
+  -webkit-transform:translate(-50%,-50%);
+          transform:translate(-50%,-50%);
+}
+.p90,.p180,.p270,.p360{
+  width:50%;
+  height:50%;
+  position:absolute;
+  left:50%;
+  top:0;
+  background-color: #7400A1;
+}
+.p180{
+  left:50%;
+  top:50%;
+}
+.p270{
+  left:0;
+  top:50%;
+}
+.p360{
+  left:0;
+  top:0;
+}
+.listLicense .bar{
+  width:70%;
+  height:10px;
+  border:solid 2px #E6CFE6;
+  border-radius:5px;
+}
+.value{
+  height:100%;
+  width:60%;
+  background-color:	#FFB3E6;
+}
+.value.p100{
+  width:100%;
+}
+.value.p50{
+  width:50%;
+}
+.value.p40{
+  width:40%;
+}
+.inline li{
+display:inline-block;
+ margin:1px;
+}
+
